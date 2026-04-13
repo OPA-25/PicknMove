@@ -1,0 +1,333 @@
+/* ===== ROOT VARIABLES ===== */
+:root {
+  --primary: #2563eb;
+  --primary-dark: #1e40af;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+
+  --bg: #f8fafc;
+  --card-bg: #ffffff;
+  --text: #0f172a;
+  --subtext: #64748b;
+
+  --radius: 14px;
+  --shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+/* ===== MAIN LAYOUT ===== */
+.driver-dashboard {
+  background: var(--bg);
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.dashboard-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* ===== DEBUG PANEL ===== */
+.debug-panel {
+  background: #0f172a;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: var(--radius);
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+/* ===== DRIVER INFO ===== */
+.driver-info-gradient {
+  background: linear-gradient(135deg, #2563eb, #4f46e5);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.driver-info-card-enhanced {
+  text-align: center;
+}
+
+.driver-name-large {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.driver-contact,
+.driver-vehicle {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* ===== TITLE ===== */
+.dashboard-title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--text);
+}
+
+/* ===== ACTIVE RIDE ===== */
+.active-ride-detailed {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: var(--shadow);
+  margin-bottom: 25px;
+}
+
+.ride-header-detailed {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.ride-meta p {
+  margin: 0;
+  font-size: 14px;
+  color: var(--subtext);
+}
+
+/* ===== ETA & AMOUNT ===== */
+.eta-display {
+  margin-top: 10px;
+}
+
+.eta-large {
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.eta-label {
+  display: block;
+  font-size: 12px;
+  color: var(--subtext);
+}
+
+.amount-display {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--success);
+}
+
+.amount-label {
+  display: block;
+  font-size: 12px;
+  color: var(--subtext);
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+  border: none;
+  border-radius: var(--radius);
+  padding: 12px 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-orange-large {
+  background: var(--warning);
+  color: #fff;
+}
+
+.btn-orange-large:hover {
+  background: #d97706;
+}
+
+.btn-blue-complete {
+  background: var(--primary);
+  color: #fff;
+}
+
+.btn-blue-complete:hover {
+  background: var(--primary-dark);
+}
+
+.btn-accept-large {
+  background: var(--success);
+  color: #fff;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.btn-accept-large:hover {
+  background: #059669;
+}
+
+.btn-disabled-large {
+  background: #cbd5f5;
+  cursor: not-allowed;
+}
+
+.btn-payment-dismiss {
+  background: var(--primary);
+  color: #fff;
+  width: 100%;
+}
+
+/* ===== BOOKINGS ===== */
+.bookings-section-detailed {
+  margin-top: 20px;
+}
+
+.section-title {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.empty-bookings {
+  text-align: center;
+  padding: 40px;
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+/* ===== GRID ===== */
+.bookings-grid-rich {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* ===== BOOKING CARD ===== */
+.booking-card-detailed {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 18px;
+  box-shadow: var(--shadow);
+  transition: 0.3s;
+}
+
+.booking-card-detailed:hover {
+  transform: translateY(-5px);
+}
+
+.booking-header h4 {
+  margin: 0 0 10px;
+}
+
+/* ===== ROUTE ===== */
+.booking-route-detailed {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.location-icon-large {
+  font-size: 18px;
+}
+
+.route-arrow-large {
+  font-size: 18px;
+  color: var(--subtext);
+}
+
+/* ===== DETAILS ===== */
+.booking-details-rich {
+  margin-top: 10px;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.detail-label {
+  color: var(--subtext);
+}
+
+.detail-value {
+  font-weight: 500;
+}
+
+/* ===== MAP ===== */
+.map-title {
+  margin: 20px 0 10px;
+}
+
+.map-section-enhanced {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 10px;
+  box-shadow: var(--shadow);
+}
+
+.map-container-enhanced {
+  height: 400px;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+/* ===== LOCATION WARNING ===== */
+.location-warning {
+  margin-top: 10px;
+  color: var(--danger);
+  font-size: 13px;
+}
+
+/* ===== PAYMENT NOTIFICATION ===== */
+.payment-notification-rich {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  background: #fff;
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: var(--shadow);
+  animation: slideUp 0.4s ease;
+}
+
+.notification-header-rich {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.payment-amount-large {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--success);
+  margin: 10px 0;
+}
+
+/* ===== ANIMATION ===== */
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .ride-header-detailed {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .map-container-enhanced {
+    height: 300px;
+  }
+}
+

@@ -1,0 +1,185 @@
+/* Main Wrapper */
+.CustomerHome {
+  min-height: 100vh;
+  background-color: #f8fafc;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: #1e293b;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Enhanced Welcome Card */
+.welcomeSection {
+  width: 100%;
+}
+
+.welcomeCard {
+  background: linear-gradient(135deg, #0f172a 0%, #334155 100%);
+  padding: 40px;
+  border-radius: 24px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Decorative element for a "tech" feel */
+.welcomeCard::after {
+  content: "";
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+}
+
+.welcomeTitle {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 800;
+  margin-bottom: 12px;
+  letter-spacing: -0.02em;
+}
+
+.userName {
+  color: #fb923c;
+  text-decoration: underline rgba(251, 146, 60, 0.3);
+}
+
+.userDetails {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.detailItem {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 6px 16px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.welcomeText {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+/* High-Visibility Action Buttons */
+.actionGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.actionButton {
+  all: unset; /* Reset button defaults */
+  cursor: pointer;
+  padding: 24px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: center;
+}
+
+.actionButton:first-child {
+  background: #f97316;
+  color: white;
+  box-shadow: 0 10px 15px -3px rgba(249, 115, 22, 0.3);
+}
+
+.actionButton:first-child:hover {
+  background: #ea580c;
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(249, 115, 22, 0.4);
+}
+
+.actionButton:last-child {
+  background: white;
+  color: #0f172a;
+  border: 2px solid #e2e8f0;
+}
+
+.actionButton:last-child:hover {
+  border-color: #0f172a;
+  background: #f8fafc;
+  transform: translateY(-4px);
+}
+
+/* Feature Cards with "Glassmorphism" hint */
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.infoCard {
+  background: white;
+  padding: 32px;
+  border-radius: 20px;
+  border: 1px solid #f1f5f9;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.infoCard:hover {
+  transform: scale(1.02);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05);
+}
+
+.cardIcon {
+  width: 50px;
+  height: 50px;
+  background: #f1f5f9;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.infoCard h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.infoCard p {
+  color: #64748b;
+  line-height: 1.5;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 640px) {
+  .container {
+    padding: 16px;
+  }
+  
+  .welcomeCard {
+    padding: 24px;
+  }
+  
+  .actionButton {
+    padding: 18px;
+  }
+}
