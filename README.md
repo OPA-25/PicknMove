@@ -1,70 +1,99 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+🚛 PicknMove 
+🔹Project Overview
 
-### `npm start`
+* Developed a full-stack web-based logistics platform to connect customers with commercial vehicle drivers.
+* Enables booking of goods transport services including mini trucks, pickups, and cargo vehicles.
+* Provides optional labour/helper services for loading and unloading tasks.
+* Designed as a solution similar to ride-hailing platforms but focused on goods transportation.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+🔹 Problem Solved
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Eliminates unorganized transport system challenges such as:
 
-### `npm run build`
+  * Lack of transparent pricing
+  * Difficulty in finding verified drivers
+  * No real-time booking or tracking
+  * Absence of helper/labour booking options
+* Provides a centralized, reliable, and user-friendly platform.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+🔹 Key Features
 
-### `npm run eject`
+* Real-time vehicle booking with distance-based fare estimation.
+* Interactive map integration for pickup and drop location selection.
+* Dynamic pricing algorithm based on vehicle type, distance, and helper charges.
+* Optional helper feature (0–3 helpers) with automated cost calculation.
+* Complete booking lifecycle management:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+  * Created → Accepted → Started → Completed → Paid
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+🔹 User Roles & Functionalities
 
-## Learn More
+👤 Customer
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* Register/login and book vehicles instantly or schedule rides.
+* Select locations via map and view estimated fare.
+* Add helpers based on requirement.
+* Track booking status and view history.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+🚚 Driver
 
-### Code Splitting
+* Register with vehicle and document verification.
+* Set helper availability and pricing.
+* Accept/reject booking requests.
+* Manage online/offline availability and track earnings.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+🔹 Technical Implementation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+* **Frontend:** React.js, Axios
+* **Backend:** Spring Boot with REST APIs
+* **Database:** MySQL 
+* **Authentication:** JWT-based secure login with role-based access
+* **Map Integration:** OpenStreetMap with Leaflet for route visualization and distance calculation
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+🔹 Core Functional Modules
 
-### Advanced Configuration
+* Authentication & Authorization System
+* Vehicle Booking & Matching System
+* Dynamic Fare Calculation Engine
+* Driver Matching Logic (nearest driver allocation)
+* Earnings & Commission Management
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+🔹 Architecture & Deployment
 
-### `npm run build` fails to minify
+* Followed modular full-stack architecture (Frontend + Backend + Database).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+🔹 Key Highlights
+
+* Designed a scalable and real-world logistics system.
+* Implemented multi-role access with secure authentication.
+* Built dynamic pricing and helper-based service model (unique feature).
+* Integrated free and open-source map services.
+* Developed a startup-level project beyond basic CRUD operations.
+
+
+
+🔹 Learning Outcomes
+
+* Gained hands-on experience in full-stack development.
+* Understood real-time booking system workflows.
+* Implemented REST APIs and role-based security.
+* Learned deployment and cloud integration.
+* Improved problem-solving and system design skills.
+
+
+
